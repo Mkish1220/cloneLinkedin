@@ -1,7 +1,11 @@
 import styled from "styled-components";
+    
+import Header from "../components/Header";
+
 
 const Home = (props) => {
-    return <div> Home</div>;
+    return <Header />;
 };
+
 
 export default Home;
