@@ -10,3 +10,5 @@ const userReducer = (state = INITIAL_STATE, action) => {
 };
 
 export default userReducer;
+
+// usestate reducer acts like state updatedr
