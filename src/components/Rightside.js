@@ -32,8 +32,9 @@ const Rightside = (props) => {
                 <img src="/images/right-icon.svg" alt="" />
                 </Recommendation>
         </FollowCard>
+        {/* fake ad for likedin */}
         <BannerCard>
-            <img src="/images/banner.jpg" alt="" />
+            <img src="/images/adslinkedd.jpg" alt="" />
         </BannerCard>
       </Container>
     );
@@ -95,7 +96,7 @@ const FeedList = styled.ul`
 `;  
 
 const Avatar = styled.div`
-    background-image: url("/images/avatar.jpg");
+    background-image: url("https://static-exp1.licdn.com/sc/h/1b4vl1r54ijmrcmcyxzoidwxms");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
