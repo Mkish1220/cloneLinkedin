@@ -11,10 +11,12 @@ const Home = (props) => {
         <Container>
             <Section>
                 <Header />
+                <Content>
                 <h5><a>Hiring in a hurry? - </a></h5>
                     {/* <a>Need Web Development in a hurry?</a> */}
                 <p>Find talented pros in record time with Upwork and keep business moving.</p>
                 {/* <p>Find talented web developers fast ready to help with your projects</p> */}
+                </Content>
             </Section>
             <Layout>
                 <Leftside />
