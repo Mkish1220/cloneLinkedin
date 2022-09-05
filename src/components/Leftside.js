@@ -3,7 +3,8 @@ import styled from "styled-components";
 const Leftside = (props) => {
     return (
      <Container>
-        <Artcard><userInfo>
+        <Artcard>
+            <userInfo>
             <CardBackGround />
             <a>
                 <Photo />
@@ -179,10 +180,23 @@ const CommunityCard = styled(Artcard)`
         &:hover {
             color: #0a66c2;
         }
+        span {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &:last-child {
+            color: rgba(0, 0, 0, 0.6);
+            text-decoration: none;
+
+            border-top: 1px solid #d6cecd;
+            padding: 12px;
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.08);
+            }
+        }
     }
 `;
-
-
 
 export default Leftside;
 
