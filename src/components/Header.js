@@ -19,7 +19,7 @@ const Header = (props) => {
                 </Search>
                 <Nav>
                     <NavListWrap>
-                     <NavList>
+                     <NavList className="active">
                         <a>
                             <img src="images/nav-home.svg" alt="" />
                              <span>Home</span>
@@ -53,6 +53,23 @@ const Header = (props) => {
                                 <span>Notifications</span>
                             </a>
                         </NavList>
+
+                        <User>
+                            <a>
+                                <img src="images/user.svg" alt="" />
+                                <span>Me</span>
+                                <img src="images/down-icon.svg" alt="" />
+                            </a>
+                        </User>
+
+                        <Work>
+                            <a>
+                                <img src="images/nav-work.svg" alt="" />
+                                <span>Work
+                                <img src="images/down-icon.svg" alt="" />
+                                </span>
+                            </a>
+                        </Work>
                     </NavListWrap>
                 </Nav>
             </Content>
@@ -140,6 +157,22 @@ const NavListWrap = styled.ul`
     flex-wrap: nowrap;
     list-style-type: none;
 
+    .active {
+        span:after {
+            content: "";
+            transform: scaleX(1);
+            border-bottom: 2px solid var(--white, #fff);
+            bottom: 0;
+            left: 0;
+            position: absolute;
+            transition: transform 0.2s ease-in-out;
+            width: 100%;
+            border-color: rgba(0, 0, 0, 0.9);
+
+        }
+    }
+
+
     `;
 
 const NavList = styled.li`
@@ -178,6 +211,10 @@ const NavList = styled.li`
         }
     }
  `;
+
+const User = styled(NavList)``;
+
+const Work = styled(User)``;
 
 
 
