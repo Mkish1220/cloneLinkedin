@@ -40,7 +40,7 @@ const Rightside = (props) => {
     );
 };
 const Container = styled.div`
-    grid-area: Rightside;
+    grid-area: rightside;
     `;
 
 const FollowCard = styled.div`
@@ -106,10 +106,18 @@ const Avatar = styled.div`
 `;
 
 const Recommendation = styled.a`
-
+    color: #0a66c2;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
 `;
 
-const BannerCard = styled(FollowCard)``;
+const BannerCard = styled(FollowCard)`
+    img {
+        width: 100%;
+        height: 100%;
+        }
+`;
 
 
 export default Rightside;
