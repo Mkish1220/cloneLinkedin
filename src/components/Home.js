@@ -1,7 +1,9 @@
 import styled from "styled-components";
     
 import Header from "../components/Header";
-
+import Leftside from "../components/Leftside";
+import Main from "../components/Main";
+import Rightside from "../components/Rightside";
 
 const Home = (props) => {
     return (
@@ -14,6 +16,11 @@ const Home = (props) => {
                 <p>Find talented pros in record time with Upwork and keep business moving.</p>
                 {/* <p>Find talented web developers fast ready to help with your projects</p> */}
             </Section>
+            <Layout>
+                <Leftside />
+                <Main />
+                <Rightside />
+            </Layout>
         </Container>
     );
 };
@@ -55,6 +62,22 @@ const Section = styled.section`
         flex-direction: column;
         padding: 0 5px;
     }
-        `;
+ `;
+
+
+const Layout = styled.div`
+    display: grid;
+    grid-template-areas: "leftside main rightside";
+    grid-template-columns: minmax(0, 5fr) minmax(0, 12fr) minmax(300px, 7fr);
+    column-gap: 25px;
+    row-gap: 25px;
+    /* grid-template-rows: auto; */
+    margin: 25px 0;
+    @media (max-width: 768px){
+        display: flex;
+        flex-direction: column;
+        padding: 0 5px;
+    }
+    `;
 
 export default Home;
